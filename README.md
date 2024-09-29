@@ -87,7 +87,7 @@ The TTC algorithm operates by identifying these core cycles and allowing agents 
 
 However, the TTC algorithm is not an ideal solution for home exchange matching problems, as home exchanges typically require mutual, one-to-one exchanges. Cycle matching, as used in the TTC algorithm, is less practical in this context because home exchange is focused on reducing commute times between two specific locations rather than constructing complex multi-agent trading cycles. Instead, a more direct mutual exchange mechanism is better suited for solving home exchange problems.
 
-The pseudocode for the Top Trading Cycles (TTC) algorithm is provided below for reference.
+### Pseudocode for the Top Trading Cycles (TTC) Algorithm
 
 ```plaintext
 while there are unmatched agents do
@@ -125,7 +125,7 @@ In the final step, a problem-specific home exchange matching algorithm has been 
 
 In the home exchange matching algorithm, the `PREFERENCE_RANK` value must be calculated for each agent. This value answers the question: **"What is my index number in the preference list of the first agent on my preference list?"** The agent with the smallest `PREFERENCE_RANK` value is paired with its first choice. If two agents have the same `PREFERENCE_RANK`, a tie is broken by random selection. Once a match is found, the paired agents are removed from the matching pool, and other agents update their preference lists. Agents with empty preference lists are also removed from the matching pool. The process is repeated until no agents remain in the matching pool.
 
-The pseudocode of the Preference-Rank Matching Algorithm can be seen below.
+### Pseudocode for the Preference-Rank Matching Algorithm
 
 ```plaintext
 foreach a1 in agents do
