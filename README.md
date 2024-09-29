@@ -44,7 +44,7 @@ The Stable Roommates Algorithm can be broken down into three main steps:
 
 In the following sections, the pseudocode for the Stable Roommates Algorithm can be referenced for a clearer understanding of the implementation.
 
-## Pseudocode for Stable Roommates Algorithm
+### Pseudocode for Stable Roommates Algorithm
 
 ```plaintext
 while there are unmatched agents do
