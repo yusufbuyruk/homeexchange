@@ -4,10 +4,14 @@ This project proposes a system where people living in large cities can reduce th
 
 ![Home Exchange Matching](readme-images/cover-image.gif)
 
-The project employs various algorithms to find optimal home exchange matches, including well-known algorithms like **Stable Roommate** and **Top Trading Cycles (TTC)**, as well as the **Preference Rank** algorithm, which I developed specifically for this problem.
+## Project Objective
+
+The primary goal of this project is to offer an alternative solution to reduce commute times for people living in high-traffic areas. By allowing individuals to exchange homes, the project explores whether commute times can be significantly reduced.
 
 ---
 ## Algorithms Used
+
+The project employs various algorithms to find optimal home exchange matches, including well-known algorithms like **Stable Roommate** and **Top Trading Cycles (TTC)**, as well as the **Preference Rank** algorithm, which I developed specifically for this problem.
 
 1. **Irving's Algorithm** (Stable Roommates Problem):
    - Finds stable matches for reciprocal home exchanges between individuals.
@@ -20,11 +24,6 @@ The project employs various algorithms to find optimal home exchange matches, in
 
 3. **Preference Rank Algorithm** (Proposed Algorithm):
    - Matches participants based on their preference rankings, offering a more flexible and optimized solution for home exchanges.
-
----
-## Project Objective
-
-The primary goal of this project is to offer an alternative solution to reduce commute times for people living in high-traffic areas. By allowing individuals to exchange homes, the project explores whether commute times can be significantly reduced.
 
 ---
 ## 1. Stable Roommate Algorithm (Irving's Algorithm)
