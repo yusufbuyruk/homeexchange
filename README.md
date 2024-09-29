@@ -164,3 +164,20 @@ The proposed home-exchange algorithms have been applied to the commute times bet
 
 You can find more details about this study at the following link: [Study Details](https://github.com/yusufbuyruk/home-exchange/releases/download/v1.0.0/home-exchange-algorithms.pdf).
 
+---
+## Share and Cite
+- **APA**
+  - Buyruk, Y., Cenani, S., & Çağdaş, G. (2022). An Agent-Based Home Exchange Model to Reduce Commute Times of University Students. *International Journal of Digital Innovation in the Built Environment (IJDIBE)*, 11(2), 1-16.
+- **Bibtex**
+ ```
+@article{buyruk2022agent,
+  title={An Agent-Based Home Exchange Model to Reduce Commute Times of University Students},
+  author={Buyruk, Yusuf and Cenani, Sehnaz and {\c{C}}a{\u{g}}da{\c{s}}, G{\"u}len},
+  journal={International Journal of Digital Innovation in the Built Environment (IJDIBE)},
+  volume={11},
+  number={2},
+  pages={1--16},
+  year={2022},
+  publisher={IGI Global}
+}
+ ```
