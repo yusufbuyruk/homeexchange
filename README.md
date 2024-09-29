@@ -89,3 +89,31 @@ However, the TTC algorithm is not an ideal solution for home exchange matching p
 
 The pseudocode for the Top Trading Cycles (TTC) algorithm is provided below for reference.
 
+```plaintext
+while there are unmatched agents do
+
+	let a1 be first unmatched agent
+	empty cycle_pool
+
+	loop
+		if cycle_pool contains a1 then
+			while a1 is not the first element of cycle_pool do
+				remove the first element in cycle_pool
+			end while
+			break loop
+		else
+			add a1 to cycle_pool
+			let a1 be the first agent in preference list of a1
+		end if
+	end loop
+
+	foreach agent a1 in cycle_pool
+		match a1 with its first_choice asymmetrically
+	end for
+
+	foreach agent in matchpool do
+		remove matching agents and update preference list
+	end for
+
+end while
+```
