@@ -77,7 +77,6 @@ for all cycles in (p1...pn+1) and (q1...qn) such that:
 end for
 ```
 
----
 ## 2. Gale’s Top Trading Cycles (TTC) Algorithm
 
 Gale’s Top Trading Cycles (TTC) algorithm is designed to solve indivisible goods trading problems, such as the housing market problem. It was first introduced by Shapley and Scarf in 1974 and is commonly used to find core cycles in each iteration. A core cycle can consist of more than two sides. For example, if agent A prefers agent B, agent B prefers agent C, and agent C prefers agent A, these agents together form a core cycle.
@@ -117,7 +116,6 @@ while there are unmatched agents do
 end while
 ```
 
----
 ## 3. Preference-Rank Matching Algorithm
 
 In the final step, a problem-specific home exchange matching algorithm has been designed and applied to the initial state distribution. An agent-based approach is used to define and solve the home exchange problem, where each home location is considered an agent. Each agent maintains a preference list of other agents for home exchange, and the list is sorted by commute times in ascending order. A threshold level is also applied to determine whether an agent is included in another agent’s preference list. Therefore, any match that occurs reduces commute times by at least a certain amount for both agents involved.
