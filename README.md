@@ -43,3 +43,37 @@ The Stable Roommates Algorithm can be broken down into three main steps:
    - If there is more than one preference per agent, the algorithm proceeds to the third step, which involves looking for preference cycles. To detect cycles, two arrays, `p` and `q`, are defined. These arrays help spot repetitions that indicate cycles. The process begins by choosing the first candidate from the preference list of more than one person and assigning it as `p0`. Next, `q0` is defined as the second member of `p0`’s preference list. To find `pi+1`, the algorithm locates the last member of `qi`’s preference list. This process continues, and when the value of `p` is repeated, a preference cycle is complete. To eliminate the cycle, `qi` will reject `pi+1` symmetrically. This process is repeated until only one element remains in each preference list. There may be multiple cycles that need to be eliminated to reach this point. If, after removing cycles, any preference list becomes empty, those agents must be removed from the match pool.
 
 In the following sections, the pseudocode for the Stable Roommates Algorithm can be referenced for a clearer understanding of the implementation.
+
+## Pseudocode for Stable Roommates Algorithm
+
+```plaintext
+while there are unmatched agents do
+
+	let a1 be first unmatched agent
+	a1 proposes to its first preference a2 who has not rejected it previously
+
+	if a2 has not receieved a proposal before then
+		a2 accepts a1
+
+	else
+		if a2 prefers a1 over its current match a3 then
+			a2 accepts a1
+			reject symmetrically (a2, a3)
+		else
+			reject symmetrically (a1, a2)
+		end if
+	end if
+end while
+
+for all a2 holding proposal from a1 do
+	reject symmetrically all (a2, a3) where a2 prefers a1 over a3
+end for
+
+for all cycles in (p1...pn+1) and (q1...qn) such that:
+	qi is the second preference of pi and pi+1 is the last preference of qi do
+
+	for i = 1 .. n do
+		rejects symmetrically (q1, pi+1)
+	end for
+end for
+```
