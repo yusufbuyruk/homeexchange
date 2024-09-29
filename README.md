@@ -27,7 +27,7 @@ The project employs various algorithms to find optimal home exchange matches, in
 The primary goal of this project is to offer an alternative solution to reduce commute times for people living in high-traffic areas. By allowing individuals to exchange homes, the project explores whether commute times can be significantly reduced.
 
 ---
-## Stable Roommate Algorithm (Irving's Algorithm)
+## 1. Stable Roommate Algorithm (Irving's Algorithm)
 
 Irving's Algorithm is used to compute the stable matching for one-sided matching problems such as the Stable Roommates Problem (Irving 1985). The Stable Roommates Problem involves finding a stable matching for an even-sized set. The general idea behind the algorithm is to pair up elements according to their preference lists within the same set. However, the originally proposed version of the algorithm cannot be directly applied to solve the home-exchange matching problem because, in the Stable Roommates Problem, all agents are matched, while in the home-exchange matching problem, only agents that reduce commute times need to be matched. Therefore, the Stable Roommates Algorithm has been adapted to address the home-exchange matching problem.
 
@@ -77,3 +77,15 @@ for all cycles in (p1...pn+1) and (q1...qn) such that:
 	end for
 end for
 ```
+
+---
+## 2. Gale’s Top Trading Cycles (TTC) Algorithm
+
+Gale’s Top Trading Cycles (TTC) algorithm is designed to solve indivisible goods trading problems, such as the housing market problem. It was first introduced by Shapley and Scarf in 1974 and is commonly used to find core cycles in each iteration. A core cycle can consist of more than two sides. For example, if agent A prefers agent B, agent B prefers agent C, and agent C prefers agent A, these agents together form a core cycle.
+
+The TTC algorithm operates by identifying these core cycles and allowing agents to trade based on their top preferences. Once a cycle is identified, the agents involved in the cycle are matched and removed from the system, and the process continues with the remaining agents.
+
+However, the TTC algorithm is not an ideal solution for home exchange matching problems, as home exchanges typically require mutual, one-to-one exchanges. Cycle matching, as used in the TTC algorithm, is less practical in this context because home exchange is focused on reducing commute times between two specific locations rather than constructing complex multi-agent trading cycles. Instead, a more direct mutual exchange mechanism is better suited for solving home exchange problems.
+
+The pseudocode for the Top Trading Cycles (TTC) algorithm is provided below for reference.
+
