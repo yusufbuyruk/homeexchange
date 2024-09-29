@@ -25,7 +25,6 @@ The project employs various algorithms to find optimal home exchange matches, in
 3. **Preference Rank Algorithm** (Proposed Algorithm):
    - Matches participants based on their preference rankings, offering a more flexible and optimized solution for home exchanges.
 
----
 ## 1. Stable Roommate Algorithm (Irving's Algorithm)
 
 Irving's Algorithm is used to compute the stable matching for one-sided matching problems such as the Stable Roommates Problem (Irving 1985). The Stable Roommates Problem involves finding a stable matching for an even-sized set. The general idea behind the algorithm is to pair up elements according to their preference lists within the same set. However, the originally proposed version of the algorithm cannot be directly applied to solve the home-exchange matching problem because, in the Stable Roommates Problem, all agents are matched, while in the home-exchange matching problem, only agents that reduce commute times need to be matched. Therefore, the Stable Roommates Algorithm has been adapted to address the home-exchange matching problem.
