@@ -8,8 +8,7 @@ This project proposes a system where people living in large cities can reduce th
 
 The primary goal of this project is to offer an alternative solution to reduce commute times for people living in high-traffic areas. By allowing individuals to exchange homes, the project explores whether commute times can be significantly reduced.
 
-## A Case Study
-**Home-Exchange Model for University Students in Istanbul**
+## A Case Study: Home-Exchange Model for University Students in Istanbul
 
 The home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by more than 50% on average**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
 
