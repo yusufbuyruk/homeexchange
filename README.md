@@ -117,3 +117,52 @@ while there are unmatched agents do
 
 end while
 ```
+
+---
+## 3. Preference-Rank Matching Algorithm
+
+In the final step, a problem-specific home exchange matching algorithm has been designed and applied to the initial state distribution. An agent-based approach is used to define and solve the home exchange problem, where each home location is considered an agent. Each agent maintains a preference list of other agents for home exchange, and the list is sorted by commute times in ascending order. A threshold level is also applied to determine whether an agent is included in another agent’s preference list. Therefore, any match that occurs reduces commute times by at least a certain amount for both agents involved.
+
+In the home exchange matching algorithm, the `PREFERENCE_RANK` value must be calculated for each agent. This value answers the question: "What is my index number in the preference list of the first agent on my preference list?" In the figure below, an example of `PREFERENCE_RANK` value calculation is provided.
+
+**IMAGE HERE**
+
+The agent with the smallest `PREFERENCE_RANK` value is paired with its first choice. If two agents have the same `PREFERENCE_RANK`, a tie is broken by random selection. Once a match is found, the paired agents are removed from the matching pool, and other agents update their preference lists. Agents with empty preference lists are also removed from the matching pool. The process is repeated until no agents remain in the matching pool.
+
+The pseudocode of the Preference-Rank Matching Algorithm can be seen below.
+
+```plaintext
+foreach a1 in agents do
+	foreach a2 in agents do
+		if a1 prefers a2 and a2 prefers a1
+			add a2 in preference_list of a1
+		end if
+	end for
+end for
+
+while true
+	foreach agent in match_pool do
+		if preference_list of agent i empty
+			remove agent from match_pool
+		else
+			find the preference_rank value
+		end if
+	end for
+
+	if there are no agents in match_pool
+		break
+
+	m1 = agent which has the smallest preference_rank value
+	m2 = first choice of m1
+
+	match m1 and m2
+
+	remove m1 and m2 from match_pool
+
+	foreach agent in match_pool to
+		remove m1 and m2 in preference_list
+	end for
+end while
+```
+
+---
