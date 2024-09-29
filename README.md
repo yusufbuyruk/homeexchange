@@ -8,6 +8,13 @@ This project proposes a system where people living in large cities can reduce th
 
 The primary goal of this project is to offer an alternative solution to reduce commute times for people living in high-traffic areas. By allowing individuals to exchange homes, the project explores whether commute times can be significantly reduced.
 
+## A Case Study
+**Home-Exchange Model for University Students in Istanbul**
+
+The home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by as much as 50%**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
+
+You can find more details about this study at the following link: [Study Details](https://github.com/yusufbuyruk/home-exchange/releases/download/v1.0.0/home-exchange-algorithms.pdf).
+
 ---
 ## Algorithms Used
 
@@ -156,13 +163,6 @@ while true
 	end for
 end while
 ```
-
----
-## A Case Study: Home-Exchange Model for University Students in Istanbul
-
-The proposed home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by as much as 50%**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
-
-You can find more details about this study at the following link: [Study Details](https://github.com/yusufbuyruk/home-exchange/releases/download/v1.0.0/home-exchange-algorithms.pdf).
 
 ---
 ## Share and Cite
