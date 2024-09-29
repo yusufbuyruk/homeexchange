@@ -2,6 +2,8 @@
 
 This project proposes a system where people living in large cities can reduce their commute times to work or school by exchanging homes with others. The system allows individuals to exchange homes, thus reducing the amount of time spent in traffic. This idea is particularly interesting for **university students** and **apartment residents** in the United States, as it provides a unique solution to the common problem of long commutes.
 
+![Home Exchange Matching](readme-images/cover-image.gif)
+
 The project employs various algorithms to find optimal home exchange matches, including well-known algorithms like **Stable Roommate** and **Top Trading Cycles (TTC)**, as well as the **Preference Rank** algorithm, which I developed specifically for this problem.
 
 ## Algorithms Used
