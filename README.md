@@ -162,5 +162,5 @@ end while
 
 The proposed home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by as much as 50%**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
 
-You can find more details about this study at the following link: [LINK].
+You can find more details about this study at the following link: [Study Details](readme-images/home-exchange-algorithms.pdf).
 
