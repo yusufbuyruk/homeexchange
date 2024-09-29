@@ -11,7 +11,7 @@ The primary goal of this project is to offer an alternative solution to reduce c
 ## A Case Study
 **Home-Exchange Model for University Students in Istanbul**
 
-The home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by as much as 50%**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
+The home-exchange algorithms have been applied to the commute times between the homes and universities of students living in Istanbul. It has been observed that **if students exchange their homes using the algorithms suggested in this study, their commute times can be reduced by more than 50% on average**, highlighting the potential impact of these algorithms on improving daily travel efficiency. 
 
 You can find more details about this study at the following link: [Study Details](https://github.com/yusufbuyruk/home-exchange/releases/download/v1.0.0/home-exchange-algorithms.pdf).
 
